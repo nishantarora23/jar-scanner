@@ -4,7 +4,7 @@ import os
 import shutil
 from zipfile import ZipFile
 
-#    path of the parent directory
+# path of the parent directory
 current_dir = os.getcwd()
 bucket_dir = os.path.join(current_dir, "Bucket")
 if os.path.exists(bucket_dir):
@@ -62,3 +62,13 @@ def extract():
 
 extract()
 
+# Generating the list of all unique the jars
+all_jars=[]
+bucket_jars = os.path.join(bucket_dir + "\**\*.jar")
+all_jars_files = glob.glob(bucket_jars,
+                  recursive=True)
+for file in all_jars_files:
+   all_jars.append(os.path.basename(file))
+all_jars = list(set(all_jars))
+print("Total No. of unique jars: ",sorted(all_jars))
+print(len(all_jars))
