@@ -72,3 +72,23 @@ for file in all_jars_files:
 all_jars = list(set(all_jars))
 print("Total No. of unique jars: ",sorted(all_jars))
 print(len(all_jars))
+
+# Importing the product created jar list from CSV to suppression list
+
+requisite_path = os.path.join(current_dir, "Requisite")
+if os.path.isfile(os.path.join(requisite_path, "suppression_jars.csv")):
+    os.chdir(requisite_path)
+    suppression = open('suppression_jars.csv', 'r')
+    # creating dictreader object
+    file = csv.DictReader(suppression)
+    # creating empty lists
+    suppression_jar = []
+
+# iterating over each row and append
+# values to empty list
+    for col in file:
+        suppression_jar.append(col['Jars'])
+suppression_jar = list(set(suppression_jar))
+# printing lists
+print("No. of jars suppressed in  project: ", len(suppression_jar)-1)
+print("Suppression jars: ", sorted(set(suppression_jar)))
