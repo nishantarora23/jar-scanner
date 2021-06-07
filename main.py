@@ -92,3 +92,21 @@ suppression_jar = list(set(suppression_jar))
 # printing lists
 print("No. of jars suppressed in  project: ", len(suppression_jar)-1)
 print("Suppression jars: ", sorted(set(suppression_jar)))
+
+# Reading the list of jars from the License file
+if os.path.isfile(os.path.join(requisite_path, "License.csv")):
+    os.chdir(requisite_path)
+    license = open('License.csv', 'r')
+    # creating dictreader object
+    file = csv.DictReader(license)
+    # creating empty lists
+    license_jar = []
+
+# iterating over each row and append
+# values to empty list
+    for col in file:
+        license_jar.append(col['jars'])
+
+# printing lists
+print("No. of jars licensed in aircore project: ", len(license_jar))
+print("License Jars: ", license_jar)
