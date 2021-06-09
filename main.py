@@ -110,3 +110,31 @@ if os.path.isfile(os.path.join(requisite_path, "License.csv")):
 # printing lists of pre-approved
 print("No. of jars licensed in aircore project: ", len(license_jar))
 print("License Jars: ", license_jar)
+
+# 3rd party jars
+third_party = []
+for element in all_jars:
+    if element not in suppression_jar:
+        third_party.append(element)
+
+print("third party ", sorted(set(third_party)))
+print("third party len", len(set(third_party)))
+
+#Unutilized and newly added jars
+deprecated_jars = []
+newly_added_jars = []
+active_license = []
+for element in license_jar:
+    if element not in third_party:
+        deprecated_jars.append(element)
+    elif element in third_party:
+        active_license.append(element)
+print("Unutilized jars ", sorted(set(deprecated_jars)))
+print("Unutilized jars len", len(set(deprecated_jars)))
+print("Active License jars ", sorted(set(active_license)))
+print("Active License jars len", len(set(active_license)))
+
+for element in third_party:
+    if element not in license_jar:
+        newly_added_jars.append(element)
+newly_added_jars= sorted(set(newly_added_jars))
