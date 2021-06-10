@@ -138,3 +138,38 @@ for element in third_party:
     if element not in license_jar:
         newly_added_jars.append(element)
 newly_added_jars= sorted(set(newly_added_jars))
+
+
+version = []
+deprected_withoutext = []
+jars_oldversion = []
+jars_newversion = []
+
+for element in deprecated_jars:
+    result = re.split(r"-\d.\d.+", element)
+    deprected_withoutext.append(result[0])
+
+
+final_new_jars= []
+versionchanged_jars = []
+for element in newly_added_jars:
+    name = re.split(r"-\d.\d.+", element)
+    if name[0] not in deprected_withoutext:
+        final_new_jars.append(element)
+    else:
+        jars_newversion.append(element)
+        versionchanged_jars.append(name[0])
+
+# Spliting old and upgraded versions
+
+my_dict = {}
+for element in deprecated_jars:
+    name = re.split(r"-\d.\d.+", element)
+    nameOfJar = name[0];
+    ver = []
+    if nameOfJar in versionchanged_jars:
+        a = element.split(nameOfJar+"-")
+        b = a[1].split(".jar")
+        old_version = "approved version : "+b[0]
+        ver.append(old_version)
+        my_dict.setdefault(nameOfJar,ver)
