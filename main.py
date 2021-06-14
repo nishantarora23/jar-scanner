@@ -163,13 +163,45 @@ for element in newly_added_jars:
 # Spliting old and upgraded versions
 
 my_dict = {}
+unutilized_jars = []
+test = []
 for element in deprecated_jars:
-    name = re.split(r"-\d.\d.+", element)
+    name = re.split(r"-\d.+", element)
     nameOfJar = name[0];
     ver = []
     if nameOfJar in versionchanged_jars:
-        a = element.split(nameOfJar+"-")
+        test.append(element)
+        if nameOfJar in my_dict.keys():
+            a = element.split(nameOfJar + "-")
+            b = a[1].split(".jar")
+            new_version = "approved version : " + b[0]
+            my_dict[nameOfJar].append(new_version)
+        else:
+            a = element.split(nameOfJar+"-")
+            b = a[1].split(".jar")
+            old_version = "approved version : "+b[0]
+            ver.append(old_version)
+            my_dict.setdefault(nameOfJar,ver)
+    else:
+        unutilized_jars.append(element)
+
+print("deprecated jars ",len(deprecated_jars))
+print(sorted(deprecated_jars))
+
+print("version changed jars",(len(test)))
+print(sorted(test))
+
+print("unutilized jars ",len(unutilized_jars))
+print(sorted(unutilized_jars))
+
+for element in jars_newversion:
+    name = re.split(r"-\d.+", element)
+    nameOfJar = name[0]
+
+    if nameOfJar in my_dict.keys():
+        a = element.split(nameOfJar + "-")
         b = a[1].split(".jar")
-        old_version = "approved version : "+b[0]
-        ver.append(old_version)
-        my_dict.setdefault(nameOfJar,ver)
+        new_version = "new version : " + b[0]
+        my_dict[nameOfJar].append(new_version)
+    else:
+        print("check the flow if it enters this else condition")
