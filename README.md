@@ -73,6 +73,12 @@ python jar-scanner.py
 
 ![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar-scanner-v1.0-demo.gif)
 
+
+<!--SAMPLE REPORT-->
+## Sample Report
+![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar_scanner_report.JPG)
+
+
 <!-- LICENSE -->
 ## License
 
