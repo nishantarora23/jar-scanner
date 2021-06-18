@@ -25,6 +25,7 @@
   * [OS Compatibility](#os-compatibility)
 * [Getting Started](#getting-started)
 * [Run Scan](#run-scan)
+  * [Demo](#demo)
 * [Sample Report](#sample-report)
 * [License](#license)
 * [Contact](#contact)
@@ -34,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-JAR-Scanner is a python based tool performing the analysis of all the JARs which are bundled as part of the product release. The main objective of this tool is to find the 3rd party JARs in the project and check if the license has been procured or not. It is done by comparing all the jars with the existing License document which contains the list JARs with already procured licenses. The tool will also project the JARs which are no longer used in the project.
+JAR-Scanner v1.0 is a python CLI based tool performing the analysis of all the JARs which are bundled as part of the product release. The main objective of this tool is to find the 3rd party JARs in the project and check if the license has been procured or not. It is done by comparing all the jars with the existing License document which contains the list JARs with already procured licenses. The tool will also project the JARs which are no longer used in the project.
 
 
 
@@ -59,7 +60,18 @@ git clone https://github.com/nishantarora94/jar-scanner.git
 ```
 2. You are good to go.
 
+<!-- RUN SCAN -->
+## Run Scan
 
+Run the below command to initiate the command:
+
+```sh
+python jar-scanner.py
+```
+
+### Demo
+
+![jar-scanner-v1.0-demo.gif](jar-scanner-v1.0-demo.gif)
 
 <!-- LICENSE -->
 ## License
