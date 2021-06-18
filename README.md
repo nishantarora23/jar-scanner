@@ -26,8 +26,9 @@
 * [Getting Started](#getting-started)
 * [JAR-Scanner Configuration](#jar-scanner-configuration)
 * [Run Scan](#run-scan)
-* [Sample JAR-Scanner Report](#sample-report)
-* [JAR-Scanner v1.0 Demo](#demo)
+* [Sample JAR-Scanner Report](#sample-jar-scanner-report)
+* [JAR-Scanner v1.0 Demo](#jar-scanner-v1.0-demo)
+* [Contribution](#contribution)
 * [License](#license)
 * [Contact](#contact)
 
@@ -93,16 +94,24 @@ python jar-scanner.py
 <b>Upgraded Jars</b>: All the 3rd party JARs which are part of the License CSV document but the JAR version has been upgraded.<br/>
 <b>Unutilized Jars</b>: All the 3rd party jars which are part of the License CSV document but are not being utilized in the scanned project currently.<br/><br/>
 
+<!--JAR-SCANNER v1.0 DEMO-->
 ## JAR-Scanner v1.0 Demo
 
 ![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar-scanner-v1.0-demo.gif)
+
+<!--CONTRIBUTION-->
+## Contribution
+Your contribution can make a huge difference. Any contributions you make are **greatly appreciated**.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/<Branch_Name>`)
+3. Commit your Changes (`git commit -m 'ADD COMMIT MESSAGE`)
+4. Push to the Branch (`git push origin feature/<Branch_Name>`)
+5. Open a Pull Request
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
