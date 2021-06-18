@@ -344,7 +344,7 @@ letter-spacing: 1px;
         <div class="header">New JARs <span style="float: right"> Count:{len(set(main.final_new_jars))}</div>
             <div class="body">
              <table width="100%" class="summary">
-              <p><br/>All the JARs which have been newly added to the project and are not part of the Suppression or L&A JAR list are listed below.</p><br/>
+              <p><br/>All the JARs which have been newly added to the project and are not part of the Suppression or License JAR list are listed below.</p><br/>
               <tr><th width="50%" height="24">JAR Name</th><th width="50%" align="center">JAR Version</th></tr> 
                {non_compliant} 
                 </table>
@@ -364,7 +364,7 @@ letter-spacing: 1px;
         <div class="header">Unutilized JARs <span style="float: right"> Count:{len(set(main.unutilized_jars))}</div>
             <div class="body">
                 <table width="100%" class="summary">
-                <p><br/>All the 3rd party jars which are part of the L&A document but are not being utilized in the project currently are listed below.</p><br/>
+                <p><br/>All the 3rd party jars which are part of the License document but are not being utilized in the project currently are listed below.</p><br/>
               <tr><th width="50%" height="24">JAR Name</th><th width="50%" align="center">JAR Version</th></tr> 
                {deprecated_jars} 
                 </table>
