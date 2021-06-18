@@ -4,7 +4,7 @@
 
 <br />
 <p align="center">
-  <h2 align="center">JAR-Scanner</h2
+  <h2 align="center">JAR-Scanner</h2>
 
   <p align="center">
     Be complaint with the licenses of your 3rd Party JARs.
