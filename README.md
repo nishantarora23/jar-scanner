@@ -36,7 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-JAR-Scanner v1.0 is a python CLI based tool performing the analysis of all the JARs which are bundled as part of the product release. The main objective of this tool is to find the 3rd party JARs in the project and check if the license has been procured or not. It is done by comparing all the jars with the existing License document which contains the list JARs with already procured licenses. The tool will also project the JARs which are no longer used in the project.
+<b>JAR-Scanner v1.0</b> is a python CLI based tool performing the analysis of all the JARs which are bundled as part of the product release. The main objective of this tool is to find the 3rd party JARs in the project and check if the license has been procured or not. It is done by comparing all the jars with the existing License document which contains the list JARs with already procured licenses. The tool will also project the JARs which are no longer used in the project.
 
 
 
@@ -63,6 +63,7 @@ git clone https://github.com/nishantarora94/jar-scanner.git
 
 <!-- JAR-SCANNER CONFIGURATION -->
 ## JAR-Scanner Configuration
+
 <b>Bucket</b> – Folder for all the WAR, EAR, ZIP files extracted by the tool.<br/>
 <b>Requisite</b> – Folder for CSV files containing list of Unisys proprietary JARs and 3rd party pre-approved JARs.<br/>
 <b>License.csv</b> – The list of 3rd party JARs which are part of the product release and for which license has been procured.<br/>
@@ -83,9 +84,10 @@ python jar-scanner.py
 
 <!--SAMPLE REPORT-->
 ## Sample JAR-Scanner Report
+
 ![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar_scanner_report.JPG)
 
-<h4> What are the tabs in the report all about? </h4><br/><br/>
+<h3> What are the tabs in the report all about? </h3><br/>
 <b>3rd Party Jars</b>: All the 3rd party JARs which are currently part of the scanned project.<br/>
 <b>New Jars</b>: All the JARs which have been newly added to the project and are not part of the suppression_jars CSVor License CSV list.<br/>
 <b>Upgraded Jars</b>: All the 3rd party JARs which are part of the License CSV document but the JAR version has been upgraded.<br/>
