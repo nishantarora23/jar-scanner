@@ -25,7 +25,7 @@
   * [OS Compatibility](#os-compatibility)
 * [Getting Started](#getting-started)
 * [Run Scan](#run-scan)
-  * [Demo](#demo)
+  * [JAR-Scanner v1.0 Demo](#demo)
 * [Sample Report](#sample-report)
 * [License](#license)
 * [Contact](#contact)
@@ -69,9 +69,9 @@ Run the below command to initiate the command:
 python jar-scanner.py
 ```
 
-### Demo
+### JAR-Scanner v1.0 Demo
 
-![jar-scanner-v1.0-demo](jar-scanner-v1.0-demo.gif)
+![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar-scanner-v1.0-demo.gif)
 
 <!-- LICENSE -->
 ## License
