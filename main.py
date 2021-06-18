@@ -92,10 +92,10 @@ if os.path.isfile(os.path.join(requisite_path, "suppression_jars.csv")):
         suppression_jar.append(col['Jars'])
 suppression_jar = list(set(suppression_jar))
 
-# Reading the list of jars from the L&A CSV file
-if os.path.isfile(os.path.join(requisite_path, "L&A.csv")):
+# Reading the list of jars from the License CSV file
+if os.path.isfile(os.path.join(requisite_path, "License.csv")):
     os.chdir(requisite_path)
-    license = open('L&A.csv', 'r')
+    license = open('License.csv', 'r')
     # creating dictreader object
     file = csv.DictReader(license)
     # creating empty lists
