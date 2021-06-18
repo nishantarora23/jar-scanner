@@ -4,7 +4,7 @@
 
 <br />
 <p align="center">
-  <h3 align="center">JAR-Scanner</h3>
+  <h2 align="center">JAR-Scanner</h2
 
   <p align="center">
     Be complaint with the licenses of your 3rd Party JARs.
@@ -85,6 +85,7 @@ python jar-scanner.py
 ## Sample JAR-Scanner Report
 ![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar_scanner_report.JPG)
 
+<h4> What are the tabs in the report all about? </h4><br/><br/>
 <b>3rd Party Jars</b>: All the 3rd party JARs which are currently part of the scanned project.<br/>
 <b>New Jars</b>: All the JARs which have been newly added to the project and are not part of the suppression_jars CSVor License CSV list.<br/>
 <b>Upgraded Jars</b>: All the 3rd party JARs which are part of the License CSV document but the JAR version has been upgraded.<br/>
