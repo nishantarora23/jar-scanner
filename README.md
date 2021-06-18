@@ -63,12 +63,12 @@ git clone https://github.com/nishantarora94/jar-scanner.git
 
 <!-- JAR-SCANNER CONFIGURATION -->
 ## JAR-Scanner Configuration
-<b>Bucket</b> – Folder for all the WAR, EAR, ZIP files extracted by the tool.
-<b>Requisite</b> – Folder for CSV files containing list of Unisys proprietary JARs and 3rd party pre-approved JARs.
-<b>License.csv</b> – The list of 3rd party JARs which are part of the product release and for which license has been procured.
-<b>suppression_jars.csv</b> – The list of Unisys proprietary JARs which are suppressed during the scan. 
-<b>Report</b> – Folder for output report.
-<b>venv</b> – To keep dependencies separate and creating python virtual environment.
+<b>Bucket</b> – Folder for all the WAR, EAR, ZIP files extracted by the tool.<br/>
+<b>Requisite</b> – Folder for CSV files containing list of Unisys proprietary JARs and 3rd party pre-approved JARs.<br/>
+<b>License.csv</b> – The list of 3rd party JARs which are part of the product release and for which license has been procured.<br/>
+<b>suppression_jars.csv</b> – The list of Unisys proprietary JARs which are suppressed during the scan.<br/>
+<b>Report</b> – Folder for output report.<br/>
+<b>venv</b> – To keep dependencies separate and creating python virtual environment.<br/><br/>
 
 
 <!-- RUN SCAN -->
@@ -85,10 +85,10 @@ python jar-scanner.py
 ## Sample JAR-Scanner Report
 ![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar_scanner_report.JPG)
 
-<b>3rd Party Jars</b>: All the 3rd party JARs which are currently part of the scanned project.
-<b>New Jars</b>: All the JARs which have been newly added to the project and are not part of the suppression_jars CSVor License CSV list.
-<b>Upgraded Jars</b>: All the 3rd party JARs which are part of the License CSV document but the JAR version has been upgraded.
-<b>Unutilized Jars</b>: All the 3rd party jars which are part of the License CSV document but are not being utilized in the scanned project currently.
+<b>3rd Party Jars</b>: All the 3rd party JARs which are currently part of the scanned project.<br/>
+<b>New Jars</b>: All the JARs which have been newly added to the project and are not part of the suppression_jars CSVor License CSV list.<br/>
+<b>Upgraded Jars</b>: All the 3rd party JARs which are part of the License CSV document but the JAR version has been upgraded.<br/>
+<b>Unutilized Jars</b>: All the 3rd party jars which are part of the License CSV document but are not being utilized in the scanned project currently.<br/><br/>
 
 ## JAR-Scanner v1.0 Demo
 
