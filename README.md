@@ -54,7 +54,8 @@ JAR-Scanner is a python based tool performing the analysis of all the JARs which
 To get this project in your system, follow the below steps:
 
 1. Clone the repo
-```https://github.com/nishantarora94/jar-scanner.git
+```sh
+git clone https://github.com/nishantarora94/jar-scanner.git
 ```
 2. You are good to go.
 
