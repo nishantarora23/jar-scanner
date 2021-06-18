@@ -24,9 +24,10 @@
   * [Built With](#built-with)
   * [OS Compatibility](#os-compatibility)
 * [Getting Started](#getting-started)
+* [JAR-Scanner Configuration](#jar-scanner-configuration)
 * [Run Scan](#run-scan)
-  * [JAR-Scanner v1.0 Demo](#demo)
-* [Sample Report](#sample-report)
+* [Sample JAR-Scanner Report](#sample-report)
+* [JAR-Scanner v1.0 Demo](#demo)
 * [License](#license)
 * [Contact](#contact)
 
@@ -60,6 +61,16 @@ git clone https://github.com/nishantarora94/jar-scanner.git
 ```
 2. You are good to go.
 
+<!-- JAR-SCANNER CONFIGURATION -->
+## JAR-Scanner Configuration
+<b>Bucket</b> – Folder for all the WAR, EAR, ZIP files extracted by the tool.
+<b>Requisite</b> – Folder for CSV files containing list of Unisys proprietary JARs and 3rd party pre-approved JARs.
+<b>License.csv</b> – The list of 3rd party JARs which are part of the product release and for which license has been procured.
+<b>suppression_jars.csv</b> – The list of Unisys proprietary JARs which are suppressed during the scan. 
+<b>Report</b> – Folder for output report.
+<b>venv</b> – To keep dependencies separate and creating python virtual environment.
+
+
 <!-- RUN SCAN -->
 ## Run Scan
 
@@ -69,15 +80,19 @@ Run the below command to initiate the command:
 python jar-scanner.py
 ```
 
-### JAR-Scanner v1.0 Demo
-
-![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar-scanner-v1.0-demo.gif)
-
 
 <!--SAMPLE REPORT-->
-## Sample Report
+## Sample JAR-Scanner Report
 ![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar_scanner_report.JPG)
 
+<b>3rd Party Jars</b>: All the 3rd party JARs which are currently part of the scanned project.
+<b>New Jars</b>: All the JARs which have been newly added to the project and are not part of the suppression_jars CSVor License CSV list.
+<b>Upgraded Jars</b>: All the 3rd party JARs which are part of the License CSV document but the JAR version has been upgraded.
+<b>Unutilized Jars</b>: All the 3rd party jars which are part of the License CSV document but are not being utilized in the scanned project currently.
+
+## JAR-Scanner v1.0 Demo
+
+![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar-scanner-v1.0-demo.gif)
 
 <!-- LICENSE -->
 ## License
