@@ -71,7 +71,7 @@ python jar-scanner.py
 
 ### Demo
 
-![jar-scanner-v1.0-demo](jar-scanner-v1.0-demo.gif)
+![](https://github.com/nishantarora94/jar-scanner/blob/master/Demo/jar-scanner-v1.0-demo.gif)
 
 <!-- LICENSE -->
 ## License
