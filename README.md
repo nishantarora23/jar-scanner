@@ -7,7 +7,7 @@
   <h2 align="center">JAR-Scanner</h2>
 
   <p align="center">
-    Be complaint with the licenses of your 3rd Party JARs.
+    Be compliant with the licenses of your 3rd Party JARs.
     <br />
     <a href="https://github.com/nishantarora94/jar-scanner/issues">Report Bug</a>
     ·
