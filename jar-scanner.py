@@ -3,6 +3,7 @@ from datetime import datetime
 import os
 import webbrowser
 import main
+import time
 
 # Check if report directory is available or not
 
@@ -321,7 +322,7 @@ letter-spacing: 1px;
         <table width="100%" class="summary" align="left"">
           <tr><th width="50%" height="24">JAR Type</th><th width="50%" align="center">Count</th></tr>     
           <tr><td>Total JARs</a></td><td align="center">{len(set(main.all_jars))}</td></tr>
-          <tr><td>Proprietary JARs</a></td><td align="center">{len(set(main.suppression_jar))-1}</td></tr>
+          <tr><td>Proprietary JARs</a></td><td align="center">{len(set(main.suppression_jar))}</td></tr>
           <tr><td>3rd Party JARs</a></td><td align="center">{len(set(main.third_party))}</td></tr>
           <tr><td>New JARs</a></td><td align="center">{len(set(main.final_new_jars))}</td></tr>
           <tr><td>Upgraded JARs</a></td><td align="center">{len(set(main.my_dict))}</td></tr>
@@ -480,6 +481,9 @@ var val;
 </script>
 </body>
 </html>"""
+
+print ("\n\nJAR-Scanner has successfully executed and the report has been generated...")
+time.sleep(5)
 
 with open('jar_scanner_report.html', 'w') as f:
     f.write(html_text)

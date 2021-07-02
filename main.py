@@ -5,7 +5,6 @@ import os
 import shutil
 from zipfile import ZipFile
 import re
-import time
 
 #    path of the parent directory
 current_dir = os.getcwd()
@@ -186,6 +185,3 @@ for element in jars_newversion:
         my_dict[nameOfJar].append(new_version)
     else:
         print("check the flow if it enters this else condition")
-        
-print ("\n\nJAR-Scanner has successfully executed and the report has been generated...")
-time.sleep(5)
