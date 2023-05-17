@@ -66,9 +66,9 @@ git clone https://github.com/nishantarora94/jar-scanner.git
 ## JAR-Scanner Configuration
 
 <b>Bucket</b> – Folder for all the WAR, EAR, ZIP files extracted by the tool.<br/>
-<b>Requisite</b> – Folder for CSV files containing list of Unisys proprietary JARs and 3rd party pre-approved JARs.<br/>
+<b>Requisite</b> – Folder for CSV files containing list of proprietary JARs and 3rd party pre-approved JARs.<br/>
 <b>License.csv</b> – The list of 3rd party JARs which are part of the product release and for which license has been procured.<br/>
-<b>suppression_jars.csv</b> – The list of Unisys proprietary JARs which are suppressed during the scan.<br/>
+<b>suppression_jars.csv</b> – The list of proprietary JARs which are suppressed during the scan.<br/>
 <b>Report</b> – Folder for output report.<br/>
 <b>venv</b> – To keep dependencies separate and creating python virtual environment.<br/><br/>
 
